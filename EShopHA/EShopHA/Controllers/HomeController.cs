@@ -26,5 +26,12 @@ namespace EShopHA.Controllers
 
             return View();
         }
+
+        public ActionResult Products()
+        {
+            ViewBag.Message = "Our Products";
+
+            return View();
+        }
     }
 }
