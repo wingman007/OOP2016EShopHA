@@ -3,7 +3,62 @@
     ViewBag.Title = "Products";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<style>
+body{
+    background-color:#ffffff;
+   
+}
 
+aside{
+    padding-left:19px;
+    padding-right:19px;
+    float:left;
+    text-align:center;
+    margin-right:10px;
+    background-color:#161515;
+    
+}
+aside ul{
+
+    margin: 10px;
+	margin-left: 0px;
+	padding-left: 12px;
+	text-align: center;
+	color: white;
+}
+aside li{
+    display:block;
+    text-align:center;
+    padding-top: 1px;
+	margin-top: 5px;
+    margin-bottom:5px;
+	font-family: Arial;
+	list-style-type: none;
+	color: #989595;
+}
+aside li a{
+    color: #989595;
+    text-decoration:none;
+}
+aside li a:hover{
+    color:white;
+     text-decoration:none;
+}
+h2{
+    background-color:#161515;
+    text-align:center;
+     color: #989595;
+}
+
+</style>
 <h2>Products</h2>
 <img src="~/Pictures/Russkiy-Standart.jpg" />
+
+<aside id="menu">
+    <ul>
+        <li><a href="~/Home/Alcohol">Vodka</a></li>
+        <li><a href="~/Home/Hookas">Hookas</a></li>
+    </ul>
+
+</aside>
 

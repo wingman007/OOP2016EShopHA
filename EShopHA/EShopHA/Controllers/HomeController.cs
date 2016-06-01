@@ -33,5 +33,18 @@ namespace EShopHA.Controllers
 
             return View();
         }
+        public ActionResult Cart()
+        {
+            ViewBag.Message = "Shopping Cart";
+
+            return View();
+        }
+
+        public ActionResult Hookas()
+        {
+            ViewBag.Message = "Hookas";
+
+            return View();
+        }
     }
 }
