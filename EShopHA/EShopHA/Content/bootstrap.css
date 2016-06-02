@@ -607,7 +607,9 @@ dt {
 dd {
   margin-left: 0;
 }
-
+.rightalign {
+    float:right;
+}
 @media (min-width: 768px) {
   .dl-horizontal dt {
     float: left;
@@ -4920,7 +4922,7 @@ a.badge:focus {
 a.list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
   color: #428bca;
-  background-color: #ffffff;
+  background-color: #ff6600;
 }
 
 .nav-pills > li > a > .badge {
@@ -4934,7 +4936,7 @@ a.list-group-item.active > .badge,
   font-weight: 200;
   line-height: 2.1428571435;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: #ffb380;
 }
 
 .jumbotron h1 {
