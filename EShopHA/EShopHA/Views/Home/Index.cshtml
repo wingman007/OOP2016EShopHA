@@ -11,23 +11,92 @@
     <p><a href="~/Home/Products" class="btn btn-primary btn-large">Browse our products &raquo;</a></p>
 </div>
 
+<style>
+    #cosmopolitan, #beach, #bloody, #martini, #bomb, #chocolate, #birthday, #strawberry {
+        width: 72%;
+        height: 45%;
+        margin: 2%;
+        margin-left: 3%;
+        display: inline-block;
+        border: 1px solid black;
+    }
+
+    #ingredients, #title, #text {
+        text-align: center;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+
+    img.beach, img.cosmo, img.bloody, img.martini, img.bomb, img.chocolate, img.birthday, img.strawberry {
+        width: 100%;
+        height: 40%;
+        margin-bottom: 0px;
+    }
+</style>
+
 <div class="row">
-    <div class="col-md-4">
+    <h2 style="text-align:center">Cocktail Recipes</h2>
+    <p id="text">Vodka drinks utilize the neutral taste of the spirit to blend seamlessly with just about anything. From the classic Vodka Martini to the Fruity Cosmopolitan, check out some of our favourite Vodka Drinks.</p>
+    <div class="col-md-3">
         <div id="cosmopolitan">
-            <img src="EShopHa/Pictures/cosmopolitan.jpg">
-            <p>Cosmopolitan</p>
-            <p>Ingredients: Vodka, Lime Juice, Triple Sec, Cranberry Juice</p>
+            <img class="cosmo" src="~/Pictures/cosmopolitan.jpg">
+            <p id="title">Cosmopolitan</p>
+            <p id="ingredients">Ingredients: Vodka, Lime Juice, Triple Sec, Cranberry Juice</p>
         </div>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="http://www.liquor.com/recipes/cosmopolitan/#gs.=6zN0Bw" target="_blank">Learn more &raquo;</a></p>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <div class="col-md-3">
+        <div id="beach">
+            <img class="beach" src="~/Pictures/sex-on-the-beach.jpg">
+            <p id="title">Sex on the Beach</p>
+            <p id="ingredients">Ingredients: Vodka, Orange Juice, Peach Schnapps, Cranberry Juice</p>
+        </div>
+        <p><a class="btn btn-default" href="http://www.liquor.com/recipes/sex-on-the-beach/#gs.H3_P5gM" target="_blank">Learn more &raquo;</a></p>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class="col-md-3">
+        <div id="bloody">
+            <img class="bloody" src="~/Pictures/bloody-mary.jpg" style="height:281px">
+            <p id="title">Bloody Marry</p>
+            <p id="ingredients">Ingredients: Vodka, Tomato Juice, Tabasco sauce, Pepper</p>
+        </div>
+        <p><a class="btn btn-default" href="http://www.liquor.com/mosaic/bloody-mary-recipes/#gs.1t75KvM" target="_blank">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-3">
+        <div id="martini" style="height:385px">
+            <img class="martini" src="~/Pictures/dirty-martini.jpg" style="height:280px">
+            <p id="title">Dirty Martini</p>
+            <p id="ingredients">Ingredients: Vodka or Gin, Dry Vermouth, Olives</p>
+        </div>
+        <p><a class="btn btn-default" href="http://www.liquor.com/mosaic/martini-recipes/#gs.kynlT8c" target="_blank">Learn more &raquo;</a></p>
+    </div>
+    <h2 style="text-align:center;">Shot Recipes</h2>
+    <p id="text">Looking for the perfect shot? We have recipes from top bartenders for delicious shooters. Here are a few shots you need to try!</p>
+    <div class="col-md-3">
+        <div id="bomb">
+            <img class="bomb" src="~/Pictures/bomp-pop.jpg" style="height: 140px;">
+            <p id="title">Bomp Pop</p>
+            <p id="ingredients">Ingredients: Lemon Vodka, Sprite, Blue Curacao, Grenadine</p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div id="chocolate" style="height: 240px;">
+            <img class="chocolate" src="~/Pictures/chocolate.jpg" style="height: 140px;">
+            <p id="title">Chocolate Cake</p>
+            <p id="ingredients">Ingredients: Vodka, Frangelico, Lemon Wedge </p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div id="birthday">
+            <img class="birthday" src="~/Pictures/birthday.jpg" style="height: 140px;">
+            <p id="title">Birthday Cake</p>
+            <p id="ingredients">Ingredients: Vodka, Chocolate Liqueur, Milk, Sprinkles</p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div id="strawberry">
+            <img class="strawberry" src="~/Pictures/strawberry.jpg" style="height: 140px;">
+            <p id="title">Strawberry Jalapeno</p>
+            <p id="ingredients">Ingredients: Vodka, Jalapeno, Strawberries, Sugar, Lime</p>
+        </div>
     </div>
 </div>
