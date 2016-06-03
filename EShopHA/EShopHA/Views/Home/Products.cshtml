@@ -9,7 +9,7 @@ body{
    
 }
 
-aside{
+section{
     padding-left:19px;
     padding-right:19px;
     float:left;
@@ -18,7 +18,7 @@ aside{
     background-color:#161515;
     
 }
-aside ul{
+section ul{
 
     margin: 10px;
 	margin-left: 0px;
@@ -26,7 +26,7 @@ aside ul{
 	text-align: center;
 	color: white;
 }
-aside li{
+section li{
     display:block;
     text-align:center;
     padding-top: 1px;
@@ -35,12 +35,13 @@ aside li{
 	font-family: Arial;
 	list-style-type: none;
 	color: #989595;
+    font-size:large;
 }
-aside li a{
+section li a{
     color: #989595;
     text-decoration:none;
 }
-aside li a:hover{
+section li a:hover{
     color:white;
      text-decoration:none;
 }
@@ -50,15 +51,33 @@ h2{
      color: #989595;
 }
 
+.img-responsive{
+    float:left;
+    text-align:center;
+    margin-bottom:20px;
+}
+
 </style>
+
 <h2>Products</h2>
-<img src="~/Pictures/Russkiy-Standart.jpg" />
 
-<aside id="menu">
-    <ul>
-        <li><a href="~/Home/Alcohols">Alcohols</a></li>
-        <li><a href="~/Home/Hookas">Hookas</a></li>
-    </ul>
+<section id="menu">
+            <ul>
+                <li><a href="~/Home/Alcohols">Alcohols</a></li>
+                <li><a href="~/Home/Hookas">Hookas</a></li>
+            </ul>
 
-</aside>
+    <div class="img-responsive">
+        <img src="~/Pictures/Products.jpg" width="94%" />
+    </div>
+</section>
+
+
+
+
+
+  
+
+
+    
 
