@@ -27,9 +27,10 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Products", "Products", "Home")</li>
-                    <li>@Html.ActionLink("Admin", "Admin", "Home")</li>
-                    
-                    
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li>@Html.ActionLink("Admin", "Admin", "Home")</li>
+                    }               
                   
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

@@ -52,6 +52,7 @@ namespace EShopHA.Controllers
 
             return View();
         }
+        [Authorize(Users="admin")]
         public ActionResult Admin()
         {
             ViewBag.Message = "Admin";
