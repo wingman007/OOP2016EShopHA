@@ -1,0 +1,154 @@
+﻿@{
+    ViewBag.Title = "Alcohols";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    div.img {
+        background-color: #ffb380;
+        margin: 5px;
+        border: 1px solid #ccc;
+        /*float: left;*/
+        position: relative;
+        /*left: 20%;*/
+        display: inline-block;
+        overflow: auto;
+        /*width: 18.72%;*/
+        width: 18.22%;
+        height: auto;
+        font-family: Arial;
+    }
+
+        div.img:hover {
+            border: 2px solid #777;
+        }
+
+        div.img img {
+            width: 100%;
+            height: auto;
+            overflow: auto;
+        }
+
+    aside {
+        padding-left: 22px;
+        padding-right: 22px;
+        margin-top: 15px;
+        float: left;
+        text-align: center;
+        /*margin-right:10px;*/
+        background-color: #161515;
+    }
+
+        aside ul {
+            /*margin: 10px;*/
+            margin-left: 0px;
+            padding-left: 0px;
+            text-align: center;
+            color: white;
+        }
+
+        aside li {
+            display: block;
+            text-align: center;
+            padding-top: 1px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-family: Arial;
+            list-style-type: none;
+            color: #989595;
+        }
+
+            aside li a {
+                text-align: center;
+                color: #989595;
+                text-decoration: none;
+            }
+
+                aside li a:hover {
+                    color: white;
+                    text-decoration: none;
+                }
+
+        aside h2 {
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            color: #989595;
+            font-size: 24px;
+        }
+</style>
+
+
+<div class="wrapper">
+    <aside id="menu">
+        <h2>Products</h2>
+        <ul>
+            <li><a href="~/Home/Alcohol">Alcohols</a></li>
+            <li><a href="~/Home/Hookas">Hookas</a></li>
+        </ul>
+    </aside>
+    
+    <section id="wrap-products">
+        <h2>Vodkas</h2>
+        <div class="img">
+            <a target="_blank" href="#">
+                <img src="~/Pictures/Russkiy-Standart.jpg">
+            </a>Russkiy Strandart<br>Price: 29$
+        </div>
+
+        <div class="img">
+            <a target="_blank" href="#">
+                <img src="~/Pictures/RSP.jpg">
+            </a>Russkiy Strandart Platinum<br>Price: 39$
+        </div>
+
+        <div class="img">
+            <a target="_blank" href="#">
+                <img src="~/Pictures/beluga.jpg">
+            </a>Beluga<br>Price: 59$
+        </div>
+
+        <div class="img">
+            <a target="_blank" href="#">
+                <img src="~/Pictures/beluga.jpg">
+            </a>Grey Goose<br>Price: 69$
+        </div>
+
+        <div class="img">
+            <a target="_blank" href="#">
+                <img src="~/Pictures/finlandia.jpg">
+            </a>Finlandia<br>Price: 29$
+        </div>
+
+        <h2>Whiskeys</h2>
+        <div class="img">
+            <a target="_blank" href="#">
+                <img src="~/Pictures/jameson.jpg">
+            </a>Jameson<br>Price: 29$
+        </div>
+
+        <div class="img">
+            <a target="_blank" href="#">
+                <img src="~/Pictures/jack.jpg">
+            </a>Jack Daniels<br>Price: 42$
+        </div>
+
+        <div class="img">
+            <a target="_blank" href="#">
+                <img src="~/Pictures/chivas.jpg">
+            </a>Chivas Regal<br>Price: 46$
+        </div>
+
+        <div class="img">
+            <a target="_blank" href="#">
+                <img src="~/Pictures/grants.jpg">
+            </a>Grant's<br>Price: 29$
+        </div>
+
+        <div class="img">
+            <a target="_blank" href="#">
+                <img src="~/Pictures/jw.jpg">
+            </a>Johnny Walker<br>Price: 29$
+        </div>
+    </section>
+</div>
