@@ -52,5 +52,11 @@ namespace EShopHA.Controllers
 
             return View();
         }
+        public ActionResult Admin()
+        {
+            ViewBag.Message = "Admin";
+
+            return View();
+        }
     }
 }
