@@ -12,7 +12,7 @@ namespace EShopHA.Controllers
 {
     public class ProductsController : Controller
     {
-        private ProductDBContext db = new ProductDBContext();
+        private ProductDBContext1 db = new ProductDBContext1();
 
         // GET: Products
         public ActionResult Index()
@@ -46,7 +46,7 @@ namespace EShopHA.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Price")] Product product)
+        public ActionResult Create([Bind(Include = "Id,Name,Price,ImageUrl,CategoryId")] Product product)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace EShopHA.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,Price")] Product product)
+        public ActionResult Edit([Bind(Include = "Id,Name,Price,ImageUrl,CategoryId")] Product product)
         {
             if (ModelState.IsValid)
             {

@@ -12,7 +12,7 @@ namespace EShopHA.Controllers
 {
     public class CategoriesController : Controller
     {
-        private ProductDBContext db = new ProductDBContext();
+        private ProductDBContext1 db = new ProductDBContext1();
 
         // GET: Categories
         public ActionResult Index()
