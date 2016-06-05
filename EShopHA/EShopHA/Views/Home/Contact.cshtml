@@ -1,13 +1,15 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<!--<h2>@ViewBag.Title.</h2>-->
+<!--<h3>@ViewBag.Message</h3>-->
+
+<h2 class="contact">The Contacts of Our Team</h2>
 
 <style>
     #contact {
-        width: 17%;
-        margin: 1%;
+        width: 18.6%;
+        margin: 5px;
         display: inline-block;
         border: 1px solid black;
         text-align: center;
@@ -15,15 +17,27 @@
         height: 35%;
     }
 
+    .pics {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: right;
+    }
+
     img.photo {
         width: 100%;
         height: 200px;
         margin-bottom: 0px;
     }
+
+    h2.contact {
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
 </style>
 
 <div class="row">
-    <div class="col-xs-12 col-sm-11">
+    <div class="pics">
         <div id="contact">
             <address>
                 <img class="photo" src="~/Pictures/angel.jpg">
@@ -37,8 +51,8 @@
             <address>
                 <img class="photo" src="~/Pictures/daniel.jpg">
                 Daniel Dinkov Dinev<br />
-                email<br /> <!--email-->
-                <abbr title="Phone">+359 892431512</abbr> <!--nomer-->
+                d.dinev90@gmail.com<br /> <!--email-->
+                <abbr title="Phone">+359 886101713</abbr> <!--nomer-->
             </address>
         </div>
 
@@ -64,7 +78,7 @@
             <address>
                 <img class="photo" src="~/Pictures/ivo.jpg">
                 Ivailo Stefanov Vasilev<br />
-                email<br /> <!--email-->
+                ivaka_vasilev@abv.bg<br />
                 <abbr title="Phone">+359 886624900</abbr>
             </address>
         </div>
@@ -73,7 +87,7 @@
             <address>
                 <img class="photo" src="~/Pictures/georgi.jpg">
                 Georgi Antonov Stamatov<br />
-                email<br /> <!--email-->
+                geostamatov@abv.bg<br />
                 <abbr title="Phone">+359 887180807</abbr>
             </address>
         </div>
@@ -82,7 +96,7 @@
             <address>
                 <img class="photo" src="~/Pictures/marina.jpg">
                 Marina Pavlova Dyankova<br />
-                email<br /> <!--email-->
+                marina.dyankova43@gmail.com<br />
                 <abbr title="Phone">+359 892331181</abbr>
             </address>
         </div>
