@@ -18,10 +18,17 @@ namespace EShopHA.Controllers
 
         // GET: Products
         [AllowAnonymous]
-        public ActionResult Index()
+        public ActionResult Alchohol()
         {
             return View(db.products.ToList());
         }
+
+        [AllowAnonymous]
+        public ActionResult Hookah()
+        {
+            return View(db.products.ToList());
+        }
+
 
         public ActionResult Admin()
         {

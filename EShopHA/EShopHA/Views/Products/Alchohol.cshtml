@@ -1,0 +1,25 @@
+﻿@model IEnumerable<EShopHA.Models.Product>
+
+@{
+    ViewBag.Title = "Alchohol";
+}
+
+<h2>Alchohol</h2>
+
+
+
+
+@foreach (var item in Model) {
+    if (item.Category == EShopHA.Models.Category.Alchohol)
+        {
+            @Html.DisplayFor(modelItem => item.Name)
+
+            @Html.DisplayFor(modelItem => item.Price)
+
+            @Html.DisplayFor(modelItem => item.ImageUrl)
+
+            @Html.DisplayFor(modelItem => item.Category)
+        }
+    }
+
+
