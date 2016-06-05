@@ -13,8 +13,10 @@
         display: inline-block;
         overflow: auto;
         width: 18.22%;
+        color:#000000;
         height: auto;
         font-family: Arial;
+        text-align:center;
     }
 
         div.img:hover {
@@ -72,6 +74,7 @@
             color: #989595;
             font-size: 24px;
         }
+
 </style>
 
 
@@ -102,7 +105,8 @@
             <a target="_blank" href="@item.ImageUrl">
                 <img src="@item.ImageUrl">
             </a>@Html.DisplayFor(modelItem => item.Name)<br>
-            Price: @Html.DisplayFor(modelItem => item.Price)
+            Price: @Html.DisplayFor(modelItem => item.Price)$
+            <br> <input type="button" value="Add to Cart" class="mybutton" />
         </div>
 
 
