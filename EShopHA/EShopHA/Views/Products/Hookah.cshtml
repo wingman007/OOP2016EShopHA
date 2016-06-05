@@ -81,8 +81,8 @@
         <aside id="menu">
             <h2>Products</h2>
             <ul>
-                <li><a href="~/Home/Alcohols">Alcohols</a></li>
-                <li><a href="~/Home/Hookas">Hookas</a></li>
+                <li><a href="~/Products/Alchohol">Alcohols</a></li>
+                <li><a href="~/Products/Hookah">Hookas</a></li>
             </ul>
 
         </aside>
@@ -99,17 +99,16 @@
     {
 
         <div class="img">
-            <a target="_blank" href="~/Pictures/hookah1.jpg">
-                <img src="~/Pictures/hookah1.jpg">
+            <a target="_blank" href="@item.ImageUrl">
+                <img src="@item.ImageUrl">
             </a>@Html.DisplayFor(modelItem => item.Name)<br>
             Price: @Html.DisplayFor(modelItem => item.Price)
         </div>
 
 
+               <!-- @Html.DisplayFor(modelItem => item.ImageUrl) -->
 
-                @Html.DisplayFor(modelItem => item.ImageUrl)
-
-                @Html.DisplayFor(modelItem => item.Category)
+               <!--  @Html.DisplayFor(modelItem => item.Category)-->
 
 
     }
