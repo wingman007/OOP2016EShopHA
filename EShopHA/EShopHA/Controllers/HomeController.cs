@@ -27,12 +27,7 @@ namespace EShopHA.Controllers
             return View();
         }
 
-        public ActionResult Products()
-        {
-            ViewBag.Message = "Our Products";
-
-            return View();
-        }
+        
         public ActionResult Cart()
         {
             ViewBag.Message = "Shopping Cart";

@@ -29,6 +29,11 @@ namespace EShopHA.Controllers
             return View(db.products.ToList());
         }
 
+        [AllowAnonymous]
+        public ActionResult Index()
+        {
+            return View();
+        }
 
         public ActionResult Admin()
         {
