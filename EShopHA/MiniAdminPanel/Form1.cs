@@ -31,5 +31,11 @@ namespace MiniAdminPanel
             this.aspNetUsersTableAdapter.Fill(this._aspnet_EShopHA_20160524043511DataSet.AspNetUsers);
 
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            Form2 frm = new Form2();
+            frm.Show();
+        }
     }
 }
