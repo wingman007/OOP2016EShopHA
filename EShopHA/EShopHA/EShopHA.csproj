@@ -30,6 +30,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -230,8 +231,12 @@
     <Content Include="Views\Products\Alchohol.cshtml" />
     <Content Include="Views\Products\Admin.cshtml" />
     <Content Include="Views\Home\Admin.cshtml" />
-    <Content Include="Views\Products\Hookah.cshtml" />
-    <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="C:\Users\pc\Desktop\Temp\Hookah.cshtml">
+      <Link>Views\Products\Hookah.cshtml</Link>
+    </Content>
+    <Content Include="C:\Users\pc\Desktop\Temp\Index.cshtml">
+      <Link>Views\Products\Index.cshtml</Link>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
