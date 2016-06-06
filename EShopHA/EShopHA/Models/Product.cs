@@ -21,5 +21,6 @@ namespace EShopHA.Models
     public class ProductDBContext : DbContext
     {
         public DbSet<Product> products { get; set; }
+        public DbSet<CartItem> ShoppingCartItems { get; set; }
     }
 }

@@ -105,7 +105,7 @@
                         <img src="@item.ImageUrl">
                     </a>@Html.DisplayFor(modelItem => item.Name)<br>
                     Price: @Html.DisplayFor(modelItem => item.Price)$
-                    <br> <input type="button" value="Add to Cart" class="mybutton" />
+                    <br> <input type="button" value="Add to Cart" class="mybutton" onclick="addToCart()" id="add" />
                 </div>
 
 
@@ -113,15 +113,19 @@
 
 
             }
+
         }
+
 
     </div>
 
 
 </div>
 
+<script>
 
 
+</script>
 
 
 
