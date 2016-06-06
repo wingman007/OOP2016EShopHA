@@ -1,0 +1,152 @@
+﻿@model IEnumerable<EShopHA.Models.Product>
+
+@{
+    ViewBag.Title = "Alchohol";
+}
+
+<style>
+    div.img {
+        background-color: #ffb380;
+        margin: 5px;
+        border: 1px solid #ccc;
+        position: relative;
+        display: inline-block;
+        overflow: auto;
+        width: 18.22%;
+        color: #000000;
+        height: auto;
+        font-family: Arial;
+        text-align: center;
+    }
+
+        div.img:hover {
+            border: 2px solid #777;
+        }
+
+        div.img img {
+            width: 100%;
+            height: auto;
+            overflow: auto;
+        }
+
+    aside {
+        padding-left: 22px;
+        padding-right: 22px;
+        margin-top: 15px;
+        float: left;
+        text-align: center;
+        background-color: #161515;
+    }
+
+        aside ul {
+            margin-left: 0px;
+            padding-left: 0px;
+            text-align: center;
+            color: white;
+        }
+
+        aside li {
+            display: block;
+            text-align: center;
+            padding-top: 1px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-family: Arial;
+            list-style-type: none;
+            color: #989595;
+        }
+
+            aside li a {
+                text-align: center;
+                color: #989595;
+                text-decoration: none;
+            }
+
+                aside li a:hover {
+                    color: white;
+                    text-decoration: none;
+                }
+
+        aside h2 {
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            color: #989595;
+            font-size: 24px;
+        }
+</style>
+
+
+<div class="row">
+    <div class="col-xs-12 col-sm-2">
+
+        <aside id="menu">
+            <h2>Products</h2>
+            <ul>
+                <li><a href="~/Products/Alchohol">Alcohols</a></li>
+                <li><a href="~/Products/Hookah">Hookas</a></li>
+            </ul>
+
+        </aside>
+
+    </div>
+    <div class="col-xs-12 col-sm-10">
+
+
+
+
+        @foreach (var item in Model)
+        {
+            if (item.Category == EShopHA.Models.Category.Alchohol)
+            {
+
+                <div class="img">
+                    <a target="_blank" href="@item.ImageUrl">
+                        <img src="@item.ImageUrl">
+                    </a>@Html.DisplayFor(modelItem => item.Name)<br>
+                    Price: @Html.DisplayFor(modelItem => item.Price)$
+                    <br> <input type="button" value="Add to Cart" class="mybutton" onclick="addToCart()" id="add" />
+                </div>
+
+
+           
+
+
+            }
+
+        }
+
+
+    </div>
+
+
+</div>
+
+<script>
+
+
+</script>
+
+
+
+
+
+
+
+
+
+@*@foreach (var item in Model) {
+    if (item.Category == EShopHA.Models.Category.Alchohol)
+        {
+            @Html.DisplayFor(modelItem => item.Name)
+
+            @Html.DisplayFor(modelItem => item.Price)
+
+            @Html.DisplayFor(modelItem => item.ImageUrl)
+
+            @Html.DisplayFor(modelItem => item.Category)
+        
+    }
+
+}*@
+
